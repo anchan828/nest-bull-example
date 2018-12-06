@@ -1,23 +1,17 @@
 {
   "compilerOptions": {
     "module": "commonjs",
-    "moduleResolution": "node",
     "declaration": true,
     "noImplicitAny": false,
     "removeComments": true,
-    "lib": [
-      "dom",
-      "es6",
-      "esnext"
-    ],
+    "noLib": false,
     "allowSyntheticDefaultImports": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "target": "es6",
     "sourceMap": true,
     "outDir": "./dist",
-    "baseUrl": "./",
-    "importHelpers": true
+    "baseUrl": "./"
   },
   "include": [
     "src/**/*"
