@@ -1,11 +1,12 @@
-import { Controller, Get, Inject } from '@nestjs/common';
+import { BullQueueInject } from '@anchan828/nest-bull';
+import { Controller, Get } from '@nestjs/common';
 import { JobId, Queue } from 'bull';
 import { APP_QUEUE } from './app.constants';
 
 @Controller()
 export class AppController {
   constructor(
-    @Inject(APP_QUEUE)
+    @BullQueueInject(APP_QUEUE)
     private readonly queue: Queue,
   ) {}
 
