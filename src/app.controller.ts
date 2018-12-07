@@ -12,6 +12,6 @@ export class AppController {
   @Get()
   async root(): Promise<JobId> {
     const job = await this.queue.add({ text: 'text' });
-    return job.id;
+    return parseInt(job.id as string, 10);
   }
 }

@@ -1,6 +1,7 @@
 import { BullModule } from '@anchan828/nest-bull';
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
+import { AppQueue } from './app.queue';
 import { AppService } from './app.service';
 
 @Module({
@@ -15,6 +16,6 @@ import { AppService } from './app.service';
     }),
   ],
   controllers: [AppController],
-  providers: [AppService],
+  providers: [AppService, AppQueue],
 })
 export class AppModule {}

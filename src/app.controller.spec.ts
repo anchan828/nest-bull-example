@@ -26,7 +26,7 @@ describe('AppController', () => {
   describe('root', () => {
     it('should return jobID', async () => {
       const appController = app.get<AppController>(AppController);
-      await expect(appController.root()).resolves.toBe('1');
+      await expect(appController.root()).resolves.toBeGreaterThanOrEqual(1);
     });
   });
 });
