@@ -11,6 +11,15 @@ import { AppService } from './app.service';
       options: {
         redis: {
           host: '127.0.0.1',
+          port: 30637,
+        },
+      },
+      extra: {
+        defaultProcessorOptions: {
+          concurrency: 3,
+        },
+        defaultJobOptions: {
+          setTTLOnComplete: 30,
         },
       },
     }),

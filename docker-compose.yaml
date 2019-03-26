@@ -1,0 +1,7 @@
+version: "3.4"
+
+services: 
+ redis:
+    image: redis:latest
+    ports: 
+     - "30637:6379"
