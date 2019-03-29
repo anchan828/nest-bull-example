@@ -19,9 +19,10 @@
     "test:e2e": "jest --config ./test/jest-e2e.json"
   },
   "dependencies": {
-    "@anchan828/nest-bull": "^0.2.3",
+    "@anchan828/nest-bull": "latest",
     "@nestjs/common": "^6.0.2",
     "@nestjs/core": "^6.0.2",
+    "@nestjs/platform-express": "^6.0.4",
     "@types/bull": "^3.5.11",
     "bull": "^3.7.0",
     "reflect-metadata": "^0.1.13",

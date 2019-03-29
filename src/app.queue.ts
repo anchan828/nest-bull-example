@@ -1,32 +1,5 @@
-import {
-  BullQueue,
-  BullQueueEventActive,
-  BullQueueEventCleaned,
-  BullQueueEventCompleted,
-  BullQueueEventDrained,
-  BullQueueEventError,
-  BullQueueEventFailed,
-  BullQueueEventGlobalActive,
-  BullQueueEventGlobalCleaned,
-  BullQueueEventGlobalCompleted,
-  BullQueueEventGlobalDrained,
-  BullQueueEventGlobalError,
-  BullQueueEventGlobalFailed,
-  BullQueueEventGlobalPaused,
-  BullQueueEventGlobalProgress,
-  BullQueueEventGlobalRemoved,
-  BullQueueEventGlobalResumed,
-  BullQueueEventGlobalStalled,
-  BullQueueEventGlobalWaiting,
-  BullQueueEventPaused,
-  BullQueueEventProgress,
-  BullQueueEventRemoved,
-  BullQueueEventResumed,
-  BullQueueEventStalled,
-  BullQueueEventWaiting,
-  BullQueueProcess,
-} from '@anchan828/nest-bull';
-import { Job, JobId } from 'bull';
+import { BullQueue, BullQueueProcess } from '@anchan828/nest-bull';
+import { Job } from 'bull';
 import { APP_QUEUE } from './app.constants';
 import { AppService } from './app.service';
 
