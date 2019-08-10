@@ -1,0 +1,9 @@
+{
+  "extends": ["config:base"],
+  "automerge": true,
+  "baseBranches": ["develop"],
+  "major": {
+    "automerge": false
+  },
+  "rebaseStalePrs": true
+}
