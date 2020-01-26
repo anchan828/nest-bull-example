@@ -27,7 +27,7 @@
     "bull": "3.7.0",
     "reflect-metadata": "0.1.13",
     "rimraf": "3.0.0",
-    "rxjs": "6.4.0",
+    "rxjs": "6.5.4",
     "typescript": "3.7.5"
   },
   "devDependencies": {
